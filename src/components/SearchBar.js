@@ -28,7 +28,7 @@ const SearchBar = () => {
             const projectId = '88swd7uknpw8';
             try {
                 const response = await fetch('https://academics.newtonschool.co/api/v1/bookingportals/city', {
-                    headers: { projectId }
+                    headers: { "d6jz2wxqn6bw": projectId }
                 });
                 const fetchedData = await response.json();
                 
@@ -68,7 +68,7 @@ const SearchBar = () => {
                 const response = await fetch(`https://academics.newtonschool.co/api/v1/bookingportals/hotel?search={"location":"${city}"}`, {
                     method: 'GET',
                     headers: {
-                        'projectId': '88swd7uknpw8',
+                        'projectId': 'd6jz2wxqn6bw',
                         'accept': 'application/json',
                         'Content-Type': 'application/json',
                     }

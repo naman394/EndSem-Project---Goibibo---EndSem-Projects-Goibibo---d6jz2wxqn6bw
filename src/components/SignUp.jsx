@@ -17,7 +17,7 @@ function SignUp() {
             method: "POST",
             headers: {
                 accept: "application/json",
-                projectId: "88swd7uknpw8",
+                projectId: "d6jz2wxqn6bw",
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
