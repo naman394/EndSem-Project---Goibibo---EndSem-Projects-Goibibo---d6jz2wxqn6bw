@@ -5,6 +5,7 @@ import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
 import "./index.css";
 import SearchBar from "./components/SearchBar";
+import HotelDetail from "./components/HotelDetail";
 
 
 function App() {
@@ -25,7 +26,8 @@ function App() {
             <Route path="/" element={isAuthenticated ? <SearchBar /> : <Navigate to="/signup" />} />
             <Route path="/signin" element={<SignIn setIsAuthenticated={setIsAuthenticated} />} />
             <Route path="/signup" element={<SignUp />} />
-            <Route path="*" element={<Navigate to="/" />} />
+            {/* <Route path="*" element={<Navigate to="/" />} /> */}
+            <Route path="/hotel/:hotelId" element = {<HotelDetail/>} />
           </Routes>
         </div>
         {/* <SortBy/> */}
